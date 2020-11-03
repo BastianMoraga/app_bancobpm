@@ -87,6 +87,44 @@ public class prestamos_act extends AppCompatActivity {
                 resultado.setText("Total: " + total);
             }
         }
+        if(cliente.equals("Betzabe"))
+        {
+            sueldo = Integer.parseInt(cli.getBetzabe());
+
+            if (credito.equals("Credito Hipotecado"))
+            {
+                prestamo = Integer.parseInt(pre.getHipotecario());
+                total = sueldo + prestamo;
+
+                resultado.setText("Total: " + total);
+            }
+            if (credito.equals("Credito Automotriz"))
+            {
+                prestamo = Integer.parseInt(pre.getAutomotriz());
+                total = sueldo + prestamo;
+
+                resultado.setText("Total: " + total);
+            }
+        }
+        if (cliente.equals("Matias"))
+        {
+            sueldo = Integer.parseInt(cli.getMatias());
+
+            if (credito.equals("Credito Hipotecado"))
+            {
+                prestamo = Integer.parseInt(pre.getHipotecario());
+                total = sueldo + prestamo;
+
+                resultado.setText("Total: " + total);
+            }
+            if (credito.equals("Credito Automotriz"))
+            {
+                prestamo = Integer.parseInt(pre.getAutomotriz());
+                total = sueldo + prestamo;
+
+                resultado.setText("Total: " + total);
+            }
+        }
     }
 
     public  void deuda(View view)
@@ -120,6 +158,46 @@ public class prestamos_act extends AppCompatActivity {
         if (cliente.equals("Roxana"))
         {
             sueldo = Integer.parseInt(cli.getRoxana());
+
+            if (credito.equals("Credito Hipotecado"))
+            {
+                prestamo = Integer.parseInt(pre.getHipotecario());
+                total = (sueldo + prestamo)/12;
+
+                resultado.setText("Cuotas: " + total);
+            }
+            if (credito.equals("Credito Automotriz"))
+            {
+                prestamo = Integer.parseInt(pre.getAutomotriz());
+                total = (sueldo + prestamo)/8;
+
+                resultado.setText("Cuotas: " + total);
+            }
+        }
+        if (cliente.equals("Betzabe"))
+        {
+
+            sueldo = Integer.parseInt(cli.getBetzabe());
+
+            if (credito.equals("Credito Hipotecado"))
+            {
+                prestamo = Integer.parseInt(pre.getHipotecario());
+                total = (sueldo + prestamo)/12;
+
+                resultado.setText("Cuotas: " + total);
+            }
+            if (credito.equals("Credito Automotriz"))
+            {
+                prestamo = Integer.parseInt(pre.getAutomotriz());
+                total = (sueldo + prestamo)/8;
+
+                resultado.setText("Cuotas: " + total);
+            }
+        }
+        if (cliente.equals("Matias"))
+        {
+
+            sueldo = Integer.parseInt(cli.getMatias());
 
             if (credito.equals("Credito Hipotecado"))
             {
